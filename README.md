@@ -1,2 +1,2 @@
 # func-es
-Repósito com objetivo de unir pequenas funcções de utilidade comum.
+Repósito com objetivo de unir pequenas funções de utilidade comum em PHP
