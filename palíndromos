@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Função que verifica se uma palavra é palíndromo.
 Dicionário Aurélio : palíndromo [Do gr. palíndromos.]
