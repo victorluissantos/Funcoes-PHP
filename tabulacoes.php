@@ -1,4 +1,9 @@
 <?php
+/**
+*@author: Victor Santos
+*@date : 05/2015
+*@param: $palavra = (string) Palavra que deseja verificar
+*/
 /*
 1 . Crie um algoritmo para montar um array conforme a matriz abaixo.
 | 0 | 2 | 4 |
@@ -12,7 +17,6 @@ function montaArray($linha = 3, $coluna = 3, $tabulacao = 2){
 
 	$array = array();
 
-	$col = 0;
 	$lin = 1;
 	for ($i=0; $i < $linha; $i++) {
 		$array[$i] = "|".$i*$tabulacao;
