@@ -1,0 +1,26 @@
+/**
+* @author: Victor Santos
+* @return: xxx.xxx.xxx-xx
+*/
+function buildMaskCpf($val)
+{
+    $val = str_split($val);
+    $newCpf = null;
+    $y = count($val);
+
+    for ($i=0; $i < count($val) ; $i++) {
+        if( (count($val) - $y) == 2) { //adiciona o -
+            $newCpf = '-'.$val[$y].$newCpf;
+        }
+        else if( ((count($val) - $y) == 6) || ((count($val) - $y) == 9) ) {
+         $newCpf = $val[$y].'.'.$newCpf;   
+        } else {
+            $newCpf = $val[$y].$newCpf;
+        }
+        $y--;
+    }
+    if( count($newCpf) < 14) {
+        $newCpf = '0'.$newCpf;
+    }
+    return $newCpf;
+}
