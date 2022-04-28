@@ -1,3 +1,4 @@
+<?php
     /**
      * @author Santos L. Victor <victorluissantos@live.com>
      * @see Function to shortable a name
